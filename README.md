@@ -39,7 +39,7 @@ export default module.exports;
 * Build the project
 
 ```
-$ deno run --allow-run  --allow-read --allow-write --unstable scripts/build.ts
+$ ./gradlew -x test clean build deno
 ```
 
 * Run the code with Deno
@@ -51,7 +51,7 @@ $ deno run build/deno/kotlin-deno-example.js
 # How to invoke Deno stdlib?
 
 * Declare "external fun" for Kotlin in src/main/kotlin/deno/lib.std.kt
-* Add imports in "scripts/deps.js"
+* Add imports in "buildSrc/src/scripts/deps.js"
 
 # import other npm packages or Deno modules
 

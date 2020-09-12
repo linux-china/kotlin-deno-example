@@ -1,5 +1,5 @@
 import {decode} from "https://deno.land/std@0.68.0/encoding/utf8.ts"
-
+import {green, red} from "https://deno.land/std@0.68.0/fmt/colors.ts";
 import {existsSync} from "https://deno.land/std@0.68.0/fs/mod.ts";
 
 const moduleName = "kotlin-deno-example";
@@ -7,11 +7,11 @@ const distPath = "build/deno";
 const distFileName = `${moduleName}.js`;
 
 function log(text: string): void {
-  console.log(`[log] ${text}`);
+  console.log(`${green('[log]')} ${text}`);
 }
 
 function err(text: string): never {
-  console.log(`[err] ${text}`);
+  console.log(`${red('[err]')} ${text}`);
   return Deno.exit(1);
 }
 

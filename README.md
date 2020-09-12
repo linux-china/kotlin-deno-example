@@ -35,6 +35,12 @@ function require(moduleName) {
 
 ```
 
+* Build the project
+
+```
+$ deno run --allow-run  --allow-read --allow-write --unstable scripts/build.ts
+```
+
 * Run the code with Deno
 
 ```

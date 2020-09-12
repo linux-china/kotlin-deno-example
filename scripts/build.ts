@@ -31,8 +31,11 @@ await run(
 
 const templateCode = decode(await Deno.readFile(`scripts/template.js`));
 const compiledJsCode = decode(await Deno.readFile(`build/js/packages/${moduleName}/kotlin/${moduleName}.js`));
+const depsCod = decode(await Deno.readFile(`scripts/deps.js`));
 
-let denoCode = templateCode.replace("//compiled Code", compiledJsCode);
+//code replacement
+let denoCode = templateCode.replace("//deps.js", depsCod);
+denoCode = denoCode.replace("//compiledCode", compiledJsCode);
 
 if (!existsSync(distPath)) {
   await Deno.mkdir(distPath);

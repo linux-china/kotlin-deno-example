@@ -33,6 +33,7 @@ function require(moduleName) {
    // ...
 }(module.exports, require('kotlin')));
 
+export default module.exports;
 ```
 
 * Build the project

@@ -53,5 +53,7 @@ $ deno run build/deno/kotlin-deno-example.js
 
 # References
 
+* Deno: https://deno.land/
+* Kotlin: https://kotlinlang.org/
 * lib.deno.d.ts: https://github.com/denoland/deno/releases/latest/download/lib.deno.d.ts
 * dukat: Converter of TypeScript definition files to Kotlin declarations https://github.com/Kotlin/dukat

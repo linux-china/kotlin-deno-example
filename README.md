@@ -38,7 +38,7 @@ function require(moduleName) {
 * Run the code with Deno
 
 ```
-$ deno run build/deno/kotlin-deno-demo.js
+$ deno run build/deno/kotlin-deno-example.js
 ```
 
 # Use cases

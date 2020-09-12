@@ -1,2 +1,2 @@
-rootProject.name = "kotlin-deno-demo"
+rootProject.name = "kotlin-deno-example"
 

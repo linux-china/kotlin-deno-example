@@ -2,7 +2,7 @@ import {decode} from "https://deno.land/std@0.68.0/encoding/utf8.ts"
 
 import {existsSync} from "https://deno.land/std@0.68.0/fs/mod.ts";
 
-const moduleName = "kotlin-deno-demo";
+const moduleName = "kotlin-deno-example";
 const distPath = "build/deno";
 const distFileName = `${moduleName}.js`;
 

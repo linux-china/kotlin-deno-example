@@ -1,6 +1,6 @@
 import Kotlin from "https://jspm.dev/kotlin@1.4"
 
-let module = {
+const module = {
     exports: {}
 };
 

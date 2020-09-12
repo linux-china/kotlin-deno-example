@@ -1,6 +1,6 @@
 Kotlin Deno example
 ===================
-Deno development with Kotlin.
+🦕Deno development with Kotlin.
 
 # Features
 
@@ -40,6 +40,11 @@ function require(moduleName) {
 ```
 $ deno run build/deno/kotlin-deno-example.js
 ```
+
+# How to invoke Deno stdlib?
+
+* Declare "external fun" for Kotlin in src/main/kotlin/deno/lib.std.kt
+* Add imports in "scripts/deps.js"
 
 # Use cases
 

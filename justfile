@@ -1,5 +1,5 @@
 build:
-  deno run --allow-run  --allow-read --allow-write --unstable scripts/build.ts
+  ./gradlew -x test clean build deno
 
 run:
   deno run build/deno/kotlin-deno-example.js

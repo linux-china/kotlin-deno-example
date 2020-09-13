@@ -14,6 +14,8 @@ fun main() {
     delay(1000L) // non-blocking delay for 1 second (default time unit is ms)
     println("Hello World!") // print after delay
   }
+  println("digest md5 example:");
+  println(createHash("md5").update("hello").toString())
 }
 
 @JsName("hello")

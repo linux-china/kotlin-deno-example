@@ -100,10 +100,14 @@ With Kotlin/JS IR compiler support, and and compiled JS code is more clean.
 * Enables continuous build: re-execute tasks when task file inputs change
 
 ```
-./gradlew -t deno
+$ ./gradlew -t deno
 ```
 
-* denon: Automatically restart your deno projects https://deno.land/x/denon
+* deno run --watch flags to watch file changes. Deno 1.4.0+ required
+
+```
+$ deno run --unstable --watch --allow-read --no-check build/deno/kotlin-deno-example.js
+```
 
 # References
 

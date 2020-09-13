@@ -91,6 +91,16 @@ function require(moduleName) {
 * Kotlin Deno App
 * Kotlin as library: TypeScript to invoke JavaScript code compiled by Kotlin
 
+# Dev Tips
+
+* Enables continuous build: re-execute tasks when task file inputs change
+
+```
+./gradlew -t -x test deno
+```
+
+* denon: Automatically restart your deno projects https://deno.land/x/denon
+
 # References
 
 * Deno: https://deno.land/

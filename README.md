@@ -42,10 +42,10 @@ export default module.exports;
 $ ./gradlew -x test clean build deno
 ```
 
-* Run the code with Deno
+* Run the code with Deno. Please add --no-check for Deno run to disable kotlin module check.
 
 ```
-$ deno run build/deno/kotlin-deno-example.js
+$ deno run --no-check build/deno/kotlin-deno-example.js
 ```
 
 # How to invoke Deno stdlib?

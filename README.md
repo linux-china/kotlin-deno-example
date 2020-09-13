@@ -69,11 +69,11 @@ implementation("org.jetbrains.kotlinx", "kotlinx-coroutines-core", "1.3.9")
 
 * Add kotlinx-coroutines-core import in templates.js
 
-```
+```javascript
 import Kotlin from "https://jspm.dev/kotlin@1.4.0"
 import KotlinxCoroutinesCore from "https://jspm.dev/kotlinx-coroutines-core@1.3.9"
 
-...
+//......
 
 function require(moduleName) {
   if (moduleName === 'kotlin') {

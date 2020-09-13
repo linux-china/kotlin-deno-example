@@ -39,7 +39,7 @@ export default module.exports;
 * Build the project
 
 ```
-$ ./gradlew -x test clean build deno
+$ ./gradlew deno
 ```
 
 * Run the code with Deno. Please add --no-check for Deno run to disable kotlin module check.
@@ -96,7 +96,7 @@ function require(moduleName) {
 * Enables continuous build: re-execute tasks when task file inputs change
 
 ```
-./gradlew -t -x test deno
+./gradlew -t deno
 ```
 
 * denon: Automatically restart your deno projects https://deno.land/x/denon

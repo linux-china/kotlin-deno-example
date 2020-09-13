@@ -11,7 +11,7 @@ const module = {
 
 function require(moduleName) {
   if (moduleName === 'kotlin') {
-    return Kotlin
+    return Kotlin;
   } else if (moduleName === 'kotlinx-coroutines-core') {
     return KotlinxCoroutinesCore;
   } else {

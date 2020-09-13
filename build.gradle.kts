@@ -26,7 +26,7 @@ kotlin {
 tasks {
   //task from buildSrc
   register<org.mvnsearch.DenoTask>("deno") {
-    dependsOn("build")
+    dependsOn("mainClasses")
     group = "Deno"
     description = "Build Deno file from Kotlin"
   }

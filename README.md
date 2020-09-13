@@ -53,11 +53,38 @@ $ deno run build/deno/kotlin-deno-example.js
 * Declare "external fun" for Kotlin in src/main/kotlin/deno/lib.std.kt
 * Add imports in "buildSrc/src/scripts/deps.js"
 
-# import other npm packages or Deno modules
+# Import other npm packages or Deno modules
 
 * Use dukat to generate Kotlin declarations from xxx.d.ts or maintain lib.xxx.kt manually
 * import Deno modules in deps.js
 * import npm packages in deps.js by https://jspm.dev/xxx@version
+
+# Use Kotlinx Coroutines library
+
+* add dependency in build.gradle.kts
+
+```
+implementation("org.jetbrains.kotlinx", "kotlinx-coroutines-core", "1.3.9")
+```
+
+* Add kotlinx-coroutines-core import in templates.js
+
+```
+import Kotlin from "https://jspm.dev/kotlin@1.4.0"
+import KotlinxCoroutinesCore from "https://jspm.dev/kotlinx-coroutines-core@1.3.9"
+
+...
+
+function require(moduleName) {
+  if (moduleName === 'kotlin') {
+    return Kotlin
+  } else if (moduleName === 'kotlinx-coroutines-core') {
+    return KotlinxCoroutinesCore;
+  } else {
+    return {};
+  }
+}
+```
 
 # Use cases
 

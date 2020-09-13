@@ -13,7 +13,7 @@ Kotlin Deno example
 
 ```javascript
 // ========stub for Deno=======
-import Kotlin from "https://jspm.dev/kotlin@1.4"
+import Kotlin from "https://jspm.dev/kotlin@1.4.0"
 
 const module = {
     exports: {}

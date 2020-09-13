@@ -1,8 +1,8 @@
 build:
-  ./gradlew -x test clean build deno
+  ./gradlew deno
 
 run:
-  deno run --no-check build/deno/kotlin-deno-example.js
+  deno run --allow-read --no-check build/deno/kotlin-deno-example.js
 
 generate:
   dukat -d src/main/kotlin/deno src/main/kotlin/deno/lib.deno.d.ts

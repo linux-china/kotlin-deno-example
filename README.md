@@ -86,6 +86,10 @@ function require(moduleName) {
 }
 ```
 
+# Kotlin/JS IR compiler
+As of Kotlin 1.4.0, the Kotlin/JS IR compiler has Alpha stability level.
+With Kotlin/JS IR compiler support, and and compiled JS code is more clean.
+
 # Use cases
 
 * Kotlin Deno App

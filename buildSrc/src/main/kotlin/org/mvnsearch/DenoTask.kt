@@ -12,8 +12,7 @@ open class DenoTask : DefaultTask() {
     val templateCode = File(scriptDir, "template.js").readText()
     val depsJsCode = File(scriptDir, "deps.js").readText()
     val compiledJsCode = File(project.buildDir, "js/packages/${appName}/kotlin/${appName}.js").readText()
-    var denoCode = templateCode.replace("//deps.js", depsJsCode)
-    denoCode = denoCode.replace("//compiledCode", compiledJsCode)
+    val denoCode = templateCode.replace("//deps.js", depsJsCode).replace("//compiledCode", compiledJsCode)
     val destDir = File(project.buildDir, "deno")
     if (!destDir.exists()) {
       destDir.mkdirs()
